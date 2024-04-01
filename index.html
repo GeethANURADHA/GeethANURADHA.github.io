@@ -350,6 +350,12 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
+
+      document.querySelectorAll("#sidemenu a").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          closemenu(); // Close the menu when a link is clicked
+        });
+      });
     </script>
   </body>
 </html>
