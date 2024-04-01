@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6cb2561c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo_trial.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi , i'm <span> Geeth Anuradha</span> <br />
+            From sri lanka
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!----------------About---------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/pic2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a software engineer with 3 years of experience in software
+              development. I have a strong knowledge of web development and
+              programming languages. I am passionate about technology and always
+              eager to learn new things.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />
+                  <div class="p-icons">
+                    <img src="images/logo/c.png" />
+                    <img src="images/logo/java.png" />
+                    <img src="images/logo/python.png" />
+                    <img src="images/logo/php.png" />
+                    <img src="images/logo/js.png" />
+                    <img src="images/logo/sql.png" />
+                  </div>
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  <div class="p-icons">
+                    <img src="images/logo/html.png" />
+                    <img src="images/logo/css.png" />
+                    <img src="images/logo/React.png" />
+                    <img src="images/logo/angular.png" />
+                    <img src="images/logo/boot.png" />
+                    <img src="images/logo/sql.png" />
+                  </div>
+                </li>
+                <li>
+                  <span>Databases</span><br />
+                  <div class="p-icons">
+                    <img src="images/logo/mongo.png" />
+                    <img src="images/logo/mysql.png" />
+                    <img src="images/logo/ms.png" />
+                    <img src="images/logo/db.png" />
+                  </div>
+                </li>
+                <li>
+                  <span>Tools</span><br />
+                  <div class="p-icons">
+                    <img src="images/logo/figma.png" />
+                    <img src="images/logo/git.png" />
+                    <img src="images/logo/vs.png" />
+                    <img src="images/logo/vc.png" />
+                    <img src="images/logo/ghub.png" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    >Trainee Software Engineer | Sri Lanka Ports Authority<br />August
+                    2023 - February 2024 </span
+                  ><br />
+                  <br />
+                  As a trainee software engineer at the Sri Lanka Ports
+                  Authority's IAS department, I spearheaded the development of
+                  two crucial systems. I crafted a sophisticated budget
+                  management system, enabling seamless tracking and allocation
+                  of funds. Additionally, I engineered a driver and vehicle
+                  management system, streamlining operations with intuitive
+                  tools for managing resources efficiently. Leveraging the MERN
+                  stack, these solutions were meticulously designed to optimize
+                  processes and drive productivity within the department,
+                  contributing significantly to organizational effectiveness.<br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Sri Lanka Institute of Information Technology<br />2020-2024</span
+                  >
+                  <br /><br />BSc (Hons) in Information Technology Specialising
+                  in Information Technology
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------Services---------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I can design a responsive website for you with the latest
+              technologies. You will be able to access your content from any
+              device.I provide design services for web applications, websites
+              and mobile applications.I design responsive websites that are easy
+              to use and look great on any device.
+            </p>
+            <a href="#"></a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I specialize in crafting responsive app designs that harness the
+              latest technologies, ensuring your content is accessible and
+              optimized for any device. Whether it's web applications, websites,
+              or mobile applications, I deliver designs that are user-friendly
+              and visually appealing across all platforms.
+            </p>
+            <a href="#"></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-tablet-screen-button"></i>
+            <h2>Web Application Design</h2>
+            <p>
+              Unlock the full potential of your web-based platform with expert
+              web application design services. I specialize in crafting
+              intuitive and visually stunning user interfaces (UI) that enhance
+              usability and drive engagement.
+            </p>
+            <a href="#"></a>
+          </div>
+          <div>
+            <i class="fa-brands fa-figma"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Elevate your digital presence with expert UI/UX design services. I
+              specialize in creating intuitive and engaging user interfaces (UI)
+              and user experiences (UX) that enhance usability and leave a
+              lasting impression on your audience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------portfolio--------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/blinkee.jpeg" />
+            <div class="layer">
+              <h3></h3>
+              <p>
+                The Blinkee.com website was the software that I decided needed
+                to be redesigned. A website for online shopping,. This website's
+                goal is to make it easier to shop, buy, pay for, and sell
+                products online. The usability of this website has a variety of
+                issues. Some of them are the extremely distressing and
+                unattractive home page, the background-blending buttons on the
+                product cards that don't encourage visitors to act, the
+                disorganized content on some pages, the missing fields in some
+                forms, and the excessive display of white space. In order to
+                avoid these usability problems, my goal was to redesign the
+                website and enhance the user experience. 
+              </p>
+              <a
+                href="https://www.figma.com/proto/w3XDxKOfdGTTX4HeNAskkb/IT3060HCI2022_Assignment3_Group_2022-WD-S1-07?node-id=3%3A19376&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A19376"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/bms5.jpg" />
+            <div class="layer">
+              <h3></h3>
+              <p>
+                budget management web application designed to streamline
+                financial processes within the organization. This application
+                facilitated efficient tracking and allocation of budgets across
+                various departments, enhancing transparency and accountability
+                in financial management.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/hun1.jpg" />
+            <div class="layer">
+              <h3></h3>
+              <p>
+                “Hungry Gals” as a social media platform for foodies, which
+                will allow users to create, edit, and delete their profile by
+                logging in to the platform. They also can create posts
+                containing photos and descriptions of their favorite food items
+                and dining experiences in different restaurants. This platform
+                will provide users with the ability to view other
+                users' profiles and follow them. Users will be able to like and
+                comment on other users' posts and receive notifications for any
+                new activity on their own posts. At the same time, the original
+                user can delete comments on their posts. 
+              </p>
+
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!----------------Contact---------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>geethanu1999@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0778908099</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/geeth.anuradha.319"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="c:\Users\geeth anuradha\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\FB659F313A40D4171FA96E96178DD552\WhatsApp Image 2024-03-25 at 00.27.44_41c866a8.jpg"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/geeth__anuradha?igsh=MXFmN3FiNnl4c3pjaw=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/geeth-anuradha/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://x.com/Geeth_Anuradha?t=LawFL2UMzkN5goRHpXpKkQ&s=09"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="images/Geeth Anuradha .pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Geeth Anuradha <i class="fa-brands fa-dev"></i></p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab"); // Change 'content' to 'tabcontent'
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
